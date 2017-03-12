@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Sortable</title>
+    <link href='css/application.css' rel='stylesheet'>
+</head>
+<body>
+<div class='navbar navbar-fixed-top'>
+
+</div>
+<div class='bootstrap-container'>
+
+
+    <div id='getting-started'>
+
+        <div id='examples'>
+            <div class='page-header'>
+                <h1>Examples</h1>
+            </div>
+            <div id='connected'>
+
+                <div class='row'>
+
+
+                    <div class='span6'>
+                        <div class="container_header">
+                            <div class="detail-id li-common-style sorting"
+                                 onclick="sorting('detail-id','left-container')"> ID
+                            </div>
+                            <div class="detail-name li-common-style sorting"
+                                 onclick="sorting('detail-name','left-container')"> Name
+                            </div>
+                            <div class="detail-score li-common-style sorting"
+                                 onclick="sorting('detail-score','left-container')"> Score
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <ol class='simple_with_animation vertical' id="left-container">
+                            <li class='highlight'>
+                                <div class="detail-id li-common-style ">113830</div>
+                                <div class="detail-name li-common-style ">Amit</div>
+                                <div class="detail-score li-common-style score">90</div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class='highlight'>
+                                <div class="detail-id li-common-style ">113831</div>
+                                <div class="detail-name li-common-style ">Neha</div>
+                                <div class="detail-score li-common-style score">80</div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class='highlight'>
+                                <div class="detail-id li-common-style ">113832</div>
+                                <div class="detail-name li-common-style ">Chandu</div>
+                                <div class="detail-score li-common-style score">70</div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class='highlight'>
+                                <div class="detail-id li-common-style ">113833</div>
+                                <div class="detail-name li-common-style ">Prajesh</div>
+                                <div class="detail-score li-common-style score">60</div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class='highlight'>
+                                <div class="detail-id li-common-style ">113834</div>
+                                <div class="detail-name li-common-style ">Jittu</div>
+                                <div class="detail-score li-common-style score">50</div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class='highlight'>
+                                <div class="detail-id li-common-style ">113835</div>
+                                <div class="detail-name li-common-style ">Sagar</div>
+                                <div class="detail-score li-common-style score">10</div>
+                                <div class="clearfix"></div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class='span6'>
+                        <div class="container_header">
+                            <div class="detail-id li-common-style sorting"
+                                 onclick="sorting('detail-id','right-container')"> ID
+                            </div>
+                            <div class="detail-name li-common-style sorting"
+                                 onclick="sorting('detail-name','right-container')"> Name
+                            </div>
+                            <div class="detail-score li-common-style sorting"
+                                 onclick="sorting('detail-score','right-container')"> Score
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <ol class='simple_with_animation vertical' style="height: 200px !important; overflow-y: auto;"
+                            id="right-container">
+
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<script src='js/jquery-3.1.1.min.js'></script>
+<script src='js/application.js'></script>
+</body>
+</html>
